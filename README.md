@@ -6,7 +6,7 @@ This repository is a showcase of the Python lecture notebooks.
 
 [Python](https://www.python.org/) can be downloaded via the website. Please install [Git](https://www.git-scm.com/) to clone this repository.
 
-When you have completed the installation of the two, please run the following command on your project root folder (the folder where this README.md is).
+When you have completed the installation of the two and cloned this repository, please run the following command on your project root folder (the folder where this README.md is).
 
 ```powershell
 py -m venv .venv
