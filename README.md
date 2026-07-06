@@ -15,7 +15,7 @@ py -m venv .venv
 Then please run the following command to launch the virtual environment.
 
 ```powershell
-./.venv/Scripts/Activate
+.\.venv\Scripts\Activate
 ```
 
 When you activate the virtual environment, please run the following command in the environment.
