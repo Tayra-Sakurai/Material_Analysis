@@ -23,7 +23,7 @@ jobs:
             - name: Execute notebooks
               run: jupyter execute src/notebooks/helloworld.ipynb
             - name: Upload artifacts
-              uses: actions/upload-artifacts@v7
+              uses: actions/upload-artifact@v7
               with:
                 path: |
                     src/notebooks/**/*.*
