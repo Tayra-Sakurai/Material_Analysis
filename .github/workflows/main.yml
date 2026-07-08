@@ -30,7 +30,7 @@ jobs:
             src/notebooks/**.ipynb
       - name: Execute notebooks
         env:
-          FILES: ${{ steps.chenged-files.outputs.all_chenged_files }}
+          FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: jupyter nbconvert --inplace --to notebook --execute ${{ env.FILES }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v7
