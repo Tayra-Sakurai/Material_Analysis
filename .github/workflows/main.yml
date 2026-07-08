@@ -31,10 +31,7 @@ jobs:
       - name: Execute notebooks
         env:
           FILES: ${{ steps.chenged-files.outputs.all_chenged_files }}
-        run: |
-          for file in ${{ env.FILES }}; do
-            jupyter nbconvert --allow-errors --inplace --execute file
-          done
+        run: jupyter nbconvert --inplace --to notebook --execute ${{ env.FILES }}
       - name: Upload artifacts
         uses: actions/upload-artifact@v7
         with:
