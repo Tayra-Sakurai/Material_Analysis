@@ -32,7 +32,7 @@ jobs:
         env:
           FILES: ${{ steps.chenged-files.outputs.all_chenged_files }}
         run: |
-          for file in ${ FILES }; do
+          for file in ${{ env.FILES }}; do
             jupyter nbconvert --allow-errors --inplace --execute file
           done
       - name: Upload artifacts
