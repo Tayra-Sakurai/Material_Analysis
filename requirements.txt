@@ -1,2 +1,5 @@
 pip>=26.1.2
 jupyterlab>=4.6.1
+matplotlib>=3.11
+numpy>=2.5.1
+pandas>=3.0.3
